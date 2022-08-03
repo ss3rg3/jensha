@@ -1,0 +1,9 @@
+.idea/
+.vscode/
+
+venv
+target/
+.project
+.classpath
+*.iml
+.attach_*
