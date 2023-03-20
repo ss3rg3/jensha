@@ -9,7 +9,7 @@ class GitRepoTest {
 
     @Test
     void repoName() {
-        ClusterRepo clusterRepo = new ClusterRepo(new PScriptFake(), "https://github.com/surg3/ccli_uc.git", "user:password");
+        ClusterRepo clusterRepo = new ClusterRepo(new PScriptFake(), "https://github.com/ellzee/ccli_uc.git", "user:password");
         assertEquals("ccli_uc", clusterRepo.getRepositoryName());
     }
 }

@@ -1,7 +1,4 @@
 package jensha.utils
-
-import jensha.utils.PScript
-
 /**
  * NodeScripts are scripts which can be copied to nodes and executed there. They are stored in /resources/nodescript inside the
  * shared library and can contain arbitrary scripts in any language and any complexity. For that the directory is stashed

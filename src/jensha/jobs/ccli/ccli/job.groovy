@@ -13,14 +13,14 @@ JobDslUtil jobDslUtil = new JobDslUtil(new PScript(this),
 
 pipelineJob(jobDslUtil.pathToPipelineJob) {
     displayName(jobDslUtil.displayName)
-    description "CCLI wrapper for https://github.com/surg3/ccli_uc.git"
+    description "CCLI wrapper for https://github.com/ellzee/ccli_uc.git"
 
     logRotator {
         numToKeep(10)
     }
 
     parameters {
-        stringParam("clusterRepoUrl", "https://github.com/surg3/ccli_uc.git", "URL the of cluster repo.")
+        stringParam("clusterRepoUrl", "https://github.com/ellzee/ccli_uc.git", "URL the of cluster repo.")
         textParam("buildCommands", "", "List of CCLI build commands, just the parameters. E.g. ` --match \"jenkins.*\" --subpath jenkins --push`.")
     }
 

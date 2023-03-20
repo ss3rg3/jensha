@@ -4,7 +4,8 @@ class CcliCommand extends Command {
 
     CcliCommand(String clusterName) {
         // Don't use setBaseCommand() in constructor, causes CPS exception
-        this.command.add("python3 ccli.py ${clusterName}")
+        this.command.add("python3 ccli.py")
+        this.command.add(clusterName)
     }
 
     CcliCommand enableDebug() {

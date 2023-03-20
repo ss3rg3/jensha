@@ -6,7 +6,7 @@ import jensha.utils.PScript
 
 class CcliRepo extends GitRepo {
 
-    private static final String remoteRepositoryUrl = "https://github.com/surg3/ccli.git"
+    private static final String remoteRepositoryUrl = "https://github.com/ellzee/ccli.git"
 
     CcliRepo(PScript pscript, String userColonToken) {
         super(pscript,

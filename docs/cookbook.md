@@ -182,7 +182,7 @@
   ```java
   class CcliRepo extends GitRepo {
   
-      private static final String remoteRepositoryUrl = "https://github.com/surg3/ccli.git"
+      private static final String remoteRepositoryUrl = "https://github.com/ellzee/ccli.git"
   
       CcliRepo(PScript pscript, String userColonToken) {
           super(pscript,
@@ -376,4 +376,13 @@ You cannot simply drop `Enum.values()` into the `choiceParam`.
           "Stage to stop after, rest will be skipped.")
   ```
 
-  
+
+
+
+# Troubleshooting
+
+
+
+## No such property: XXX for class
+
+You need to provide the proper classpath in the job settings. See step "Process Job DSLs" > "Advanced" > "Additional classpath". This must match your folder structure in the Jensha repo, e.g. `src/main/java`
